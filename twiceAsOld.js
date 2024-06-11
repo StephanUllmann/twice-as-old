@@ -25,8 +25,14 @@ const handleSubmit = (e) => {
 
   let msg =
     +dadAge > 2 * +kidAge
-      ? `In ${inYears} years the Parent will be twice as old as the Kiddo.`
-      : `${inYears} years ago the Parent was twice as old as the kiddo.`;
+      ? `In ${inYears} years the Parent will be twice as old as the Kiddo. <br/>Kiddo will be ${
+          +kidAge + inYears
+        }. Parent will be ${+dadAge + inYears}.`
+      : `${inYears} years ago the Parent was twice as old as the kiddo.<br/>Kiddo was ${
+          +kidAge - inYears
+        }. Parent was ${+dadAge - inYears}.`;
+
+  msg += ``;
 
   msg += `<br/>That's in ${year + inYears}.`;
 
