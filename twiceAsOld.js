@@ -32,8 +32,6 @@ const handleSubmit = (e) => {
           +kidAge - inYears
         }. Parent was ${+dadAge - inYears}.`;
 
-  msg += ``;
-
   msg += `<br/>That's in ${year + inYears}.`;
 
   output.innerHTML = msg;
